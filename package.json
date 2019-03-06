@@ -1,0 +1,29 @@
+{
+  "name": "producer",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "test": "export TZ=Asia/Shanghai && ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- -R spec -t 20000 -r test/hook"
+  },
+  "dependencies": {
+    "async": "~0.9.0",
+    "axios": "~0.18.0",
+    "ldapjs": "^1.0.2",
+    "lodash-node": "~2.4.1",
+    "log4js": "~0.6.25",
+    "moment": "~2.13.0",
+    "moment-timezone": "~0.5",
+    "mongodb": "^2.2.36",
+    "mongoskin": "~2.1.0"
+  },
+  "devDependencies": {
+    "chai": "~4.1.2",
+    "eslint": "^4.13",
+    "expect.js": "~0.3.1",
+    "istanbul": "^0.4.5",
+    "mocha": "~1.20.1",
+    "rewire": "~3.0.2",
+    "sinon": "~4.1",
+    "superagent": "~0.18.0"
+  }
+}
